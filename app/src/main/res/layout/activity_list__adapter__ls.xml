@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/jNoLS"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/listview_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:text="Job No." >
+    </TextView>
+
+    <TextView
+        android:id="@+id/rNoLS"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/listview_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:text="Receipt No." >
+    </TextView>
+
+    <TextView
+        android:id="@+id/rDateLS"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/listview_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:text="Receipt Date" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/clientName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/listview_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:text="Client Name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/rAmount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/listview_shape"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:text="Receipt Amount (RM)" >
+    </TextView>
+
+
+</LinearLayout>

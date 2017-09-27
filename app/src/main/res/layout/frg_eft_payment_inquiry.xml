@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.moshin.eljt2.EftPaymentInquiry"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:layout_width="142dp"
+        android:layout_height="57dp"
+        app:srcCompat="@drawable/eljtlogo"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eftPaymentEnquiry"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:layout_gravity="center"
+        android:background="#5b8140"
+        android:id="@+id/textView" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/border_shadow"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="19dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginBottom="15dp">
+
+
+            <TextView
+                android:text="@string/eftno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewEft"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="242dp"
+                android:layout_height="40dp"
+                android:id="@+id/editTextEftNo"
+                android:background="@drawable/textview_border"
+                android:textColor="#000000"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="0dp">
+
+
+            <com.example.moshin.eljt2.MyButton
+                android:text="@string/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BtnSearchEft"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:layout_margin="10dp"/>
+
+            <com.example.moshin.eljt2.MyButton
+                android:text="Change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BtnLanguange"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

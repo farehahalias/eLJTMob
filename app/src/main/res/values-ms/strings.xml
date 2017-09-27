@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eLJT</string>
+    <string name="eftPaymentEnquiry">EFT Bayaran Siasatan</string>
+    <string name="search">Cari</string>
+    <string name="eftno">No EFT</string>
+</resources>

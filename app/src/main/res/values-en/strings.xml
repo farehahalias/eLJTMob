@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eLJT</string>
+    <string name="eftPaymentEnquiry">EFT Payment Enquiry</string>
+    <string name="search">Search</string>
+    <string name="eftno">EFT No</string>
+</resources>

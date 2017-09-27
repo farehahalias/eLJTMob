@@ -1,0 +1,12 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.moshin.eljt2.EftPaymentInquiry"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/activity_menu_content"/>
+
+</LinearLayout>

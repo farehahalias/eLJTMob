@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">eLJT</string>
+    <string name="title_activity_list_eft__adapter" translatable="false">ListEft_Adapter</string>
+    <string name="eftPaymentEnquiry">EFT Payment Enquiry</string>
+    <string name="search">search</string>
+    <string name="eftno">eftno</string>
+</resources>
