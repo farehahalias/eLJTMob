@@ -9,15 +9,8 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
-
-    <ImageView
-        android:layout_width="142dp"
-        android:layout_height="57dp"
-        app:srcCompat="@drawable/eljtlogo"
-        android:id="@+id/imageView"
-        android:layout_marginBottom="10dp"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
 
 
 
@@ -25,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/eftPaymentEnquiry"
-        android:textSize="23dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:layout_centerInParent="true"
         android:textColor="#fff"
@@ -37,82 +30,94 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/border_shadow"
-        android:layout_gravity="center">
+        android:orientation="horizontal"
+        android:paddingLeft="19dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="15dp">
 
-        <LinearLayout
+
+        <TextView
+            android:text="@string/eftno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewEft"
+            android:layout_marginRight="10dp"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+
+        <EditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:paddingLeft="19dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="19dp"
-            android:layout_marginBottom="15dp">
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/editTextEftNo"
+            android:background="@drawable/textview_border"
+            android:textColor="#000000"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
 
-
-            <TextView
-                android:text="@string/eftno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textViewEft"
-                android:textSize="20dp"
-                android:layout_marginRight="10dp"
-                android:textColor="@color/black"/>
-
-            <EditText
-                android:layout_width="242dp"
-                android:layout_height="40dp"
-                android:id="@+id/editTextEftNo"
-                android:background="@drawable/textview_border"
-                android:textColor="#000000"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:layout_margin="0dp">
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
-
-            <com.example.moshin.eljt2.MyButton
-                android:text="@string/search"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/BtnSearchEft"
-                android:textColor="#fff"
-                android:layout_weight="1"
-                android:visibility="visible"
-                android:layout_margin="10dp"/>
-
-            <com.example.moshin.eljt2.MyButton
-                android:text="Change"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/BtnLanguange"
-                android:textColor="#fff"
-                android:layout_weight="1"
-                android:visibility="visible"
-                android:layout_margin="10dp"/>
-
-
-        </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:text="@string/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BtnSearchEft"
+            android:background="#5498da"
+            android:textColor="#fff"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:id="@+id/listefthide">
+
+            <ListView
+                android:id="@+id/listviewEFT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null">
+            </ListView>
+
+            <Button
+                android:text="@string/downloadV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BtnDownVou"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#5498da"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </LinearLayout>

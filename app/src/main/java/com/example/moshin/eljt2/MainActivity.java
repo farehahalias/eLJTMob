@@ -1,13 +1,17 @@
 package com.example.moshin.eljt2;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.valdesekamdem.library.mdtoast.MDToast;
+
+//import com.medialablk.easytoast.EasyToast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -70,24 +74,31 @@ public class MainActivity extends AppCompatActivity {
                     }else{
 
                         // user id ngn password tak match //keluarkan toast
-                        Toast.makeText(getApplicationContext(), "Username/Password is incorrect", Toast.LENGTH_LONG).show();
+                        MDToast mdToast = MDToast.makeText(getApplicationContext() , "Username/Password is incorrect" , Toast.LENGTH_SHORT);
+                            mdToast.show();
 
                     }
                 }else{
                     //kalo user tak masuk apa2 id 0r pass
-                    if(username.isEmpty()) {
-                        txtUsername.setError("Please enter your User ID");
+                    if(username.isEmpty() && password.isEmpty()) {
+
+                        MDToast mdToast = MDToast.makeText(getApplicationContext() , "Please enter your Username and Password" , Toast.LENGTH_SHORT);
+                        mdToast.show();
+//
+
+
+
                     }
                     else{
                         txtUsername.setError(null);
                     }
 
-                    if(password.isEmpty()){
-                        txtPassword.setError("Please enter your Password");
-                    }
-                    else{
-                        txtPassword.setError(null);
-                    }
+//                    if(password.isEmpty()){
+//                        Toast.makeText(getApplicationContext(), "Please enter your Password", Toast.LENGTH_LONG).show();
+//                    }
+//                    else{
+//                        txtPassword.setError(null);
+//                    }
 
                 }
 

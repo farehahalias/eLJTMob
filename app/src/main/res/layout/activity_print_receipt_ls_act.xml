@@ -23,7 +23,7 @@
         android:layout_gravity="right">
 
         <lib.kingja.switchbutton.SwitchMultiButton
-            android:id="@+id/BtnlangEft"
+            android:id="@+id/BtnlangLS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
@@ -37,8 +37,8 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/EFTMain"
-        android:layout_below="@id/BtnlangEft"
+        android:id="@+id/LSsearch"
+        android:layout_below="@id/BtnlangLS"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

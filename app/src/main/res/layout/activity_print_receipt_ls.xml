@@ -11,318 +11,268 @@
         android:layout_width="match_parent"
         android:layout_height="10dp" />
 
-    <ImageView
-        android:layout_width="142dp"
-        android:layout_height="57dp"
-        app:srcCompat="@drawable/eljtlogo"
-        android:id="@+id/imageView"
-        />
+
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:text="LIST OF JOB RECEIPTS"
-        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/printreceiptLS"
+        android:textSize="23dp"
         android:textStyle="bold"
         android:layout_centerInParent="true"
         android:textColor="#fff"
         android:paddingLeft="15dp"
         android:layout_gravity="center"
-        android:background="@android:color/holo_blue_light" />
+        android:background="#5b8140" />
 
 
-    <Space
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="5dp" />
+        android:layout_height="match_parent">
 
-
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="12dp" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:orientation="horizontal"
-        android:paddingLeft="5dp">
-
-
-        <TextView
-            android:text="Job No. :"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/textViewjn"
-            android:textSize="17dp"
-            android:textColor="@color/black"/>
-
-        <Space
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:orientation="vertical" >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2"
+                android:weightSum="2">
 
 
-    </LinearLayout>
+                <TextView
+                    android:text="@string/jobNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewjn"
+                    android:textSize="17dp"
+                    android:layout_weight="0.70"
+                    android:textColor="@color/black"/>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:transformPivotX="@dimen/activity_horizontal_margin"
-        android:foregroundTint="@color/colorPrimaryDark"
-        android:foregroundGravity="center"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        >
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/editTextJobNo"
-            android:background="@drawable/textview_border"
-            android:textColor="#000000"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:orientation="horizontal"
-        android:paddingLeft="5dp">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:id="@+id/editTextJobNo"
+                    android:background="@drawable/textview_border"
+                    android:textColor="#000000"
+                    android:layout_weight="1.27"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
 
 
-        <TextView
-            android:text="Receipt No :"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/textViewrNo"
-            android:textSize="17dp"
-            android:textColor="@color/black"/>
+            </LinearLayout>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:layout_marginBottom="10dp">
 
 
-    </LinearLayout>
+                <TextView
+                    android:text="@string/resitNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewrNo"
+                    android:textSize="17dp"
+                    android:layout_weight="0.70"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:id="@+id/editTextReceiptNo"
+                    android:background="@drawable/textview_border"
+                    android:textColor="#000000"
+                    android:layout_weight="1.27"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:transformPivotX="@dimen/activity_horizontal_margin"
-        android:foregroundTint="@color/colorPrimaryDark"
-        android:foregroundGravity="center"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        >
+            </LinearLayout>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/editTextReceiptNo"
-            android:background="@drawable/textview_border"
-            android:textColor="#000000"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:orientation="horizontal"
-        android:paddingLeft="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:layout_marginBottom="10dp">
 
 
-        <TextView
-            android:text="Receipt Date :"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/textViewrDate"
-            android:textSize="17dp"
-            android:textColor="@color/black"/>
+                <TextView
+                    android:text="@string/resitdate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewrDate"
+                    android:textSize="17dp"
+                    android:layout_weight="0.70"
+                    android:textColor="@color/black"/>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:background="@drawable/textview_border"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/editTextReceiptDate"
+                    android:layout_weight="1.27"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
 
+            </LinearLayout>
 
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:transformPivotX="@dimen/activity_horizontal_margin"
-        android:foregroundTint="@color/colorPrimaryDark"
-        android:foregroundGravity="center"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        >
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@drawable/textview_border"
-            android:inputType="date"
-            android:ems="10"
-            android:id="@+id/editTextReceiptDate"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:orientation="horizontal"
-        android:paddingLeft="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:layout_marginBottom="10dp">
 
 
-        <TextView
-            android:text="Client Name :"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/textViewcName"
-            android:textSize="17dp"
-            android:textColor="@color/black"/>
+                <TextView
+                    android:text="@string/clientname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewcName"
+                    android:textSize="17dp"
+                    android:layout_weight="0.70"
+                    android:textColor="@color/black"/>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:id="@+id/editTextClientName"
+                    android:background="@drawable/textview_border"
+                    android:textColor="#000000"
+                    android:layout_weight="1.27"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
 
+            </LinearLayout>
 
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:transformPivotX="@dimen/activity_horizontal_margin"
-        android:foregroundTint="@color/colorPrimaryDark"
-        android:foregroundGravity="center"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        >
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/editTextClientName"
-            android:background="@drawable/textview_border"
-            android:textColor="#000000"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:layout_marginBottom="10dp">
 
 
-    </LinearLayout>
+                <TextView
+                    android:text="@string/resitamount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewEft"
+                    android:textSize="17dp"
+                    android:layout_weight="0.70"
+                    android:textColor="@color/black" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:orientation="horizontal"
-        android:paddingLeft="5dp">
-
-
-        <TextView
-            android:text="Receipt Amount :"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/textViewEft"
-            android:textSize="17dp"
-            android:textColor="@color/black"/>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:id="@+id/editTextReceiptAmo"
+                    android:background="@drawable/textview_border"
+                    android:textColor="#000000"
+                    android:layout_weight="1.27"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
 
 
-    </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <Button
+                    android:text="@string/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#5498da"
+                    android:id="@+id/BtnSearchLS"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:onClick="BtnSearchLS"
+                    android:layout_margin="10dp"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:text="Note: Only receipt dated from 1st April 2015 onwards are  available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:layout_weight="1"
+                    android:textColor="#ff0000"/>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:transformPivotX="@dimen/activity_horizontal_margin"
-        android:foregroundTint="@color/colorPrimaryDark"
-        android:foregroundGravity="center"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        >
+            </LinearLayout>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/editTextReceiptAmo"
-            android:background="@drawable/textview_border"
-            android:textColor="#000000"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listLS"
+                android:orientation="vertical"
+                android:visibility="invisible">
 
-    </LinearLayout>
+                <ListView
+                    android:id="@+id/listviewLS"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null" >
+                </ListView>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        >
+                <Button
+                    android:text="PRINT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BtnPrint"
+                    android:layout_weight="0.29"
+                    android:background="#5498da"
+                    android:textColor="#fff"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 
-        <Button
-            android:text="Start Search"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:background="@drawable/button"
-            android:id="@+id/BtnSearchLS"
-            android:layout_weight="1"
-            android:visibility="visible"
-            android:onClick="BtnSearchLS"
-            android:layout_margin="10dp"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="20dp"
-        android:orientation="vertical"
-        android:layout_gravity="center">
-
-        <TextView
-            android:text="Note: Only receipt dated from 1st April 2015 onwards "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView8"
-            android:layout_weight="1"
-            android:textColor="#ff0000"/>
-
-        <TextView
-            android:text="are available "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView9"
-            android:layout_weight="1"
-            android:textColor="#ff0000"/>
-
-    </LinearLayout>
 </LinearLayout>

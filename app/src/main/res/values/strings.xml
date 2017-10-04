@@ -4,4 +4,11 @@
     <string name="eftPaymentEnquiry">EFT Payment Enquiry</string>
     <string name="search">search</string>
     <string name="eftno">eftno</string>
+    <string name="printreceiptLS">print</string>
+    <string name="downloadV">downloadV</string>
+    <string name="jobNo">jonNo</string>
+    <string name="resitNo">resitNo</string>
+    <string name="resitdate">resitdate</string>
+    <string name="clientname">clientname</string>
+    <string name="resitamount">resitamount</string>
 </resources>

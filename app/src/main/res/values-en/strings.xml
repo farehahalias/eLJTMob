@@ -2,6 +2,13 @@
 <resources>
     <string name="app_name">eLJT</string>
     <string name="eftPaymentEnquiry">EFT Payment Enquiry</string>
-    <string name="search">Search</string>
+    <string name="search">Start Search</string>
     <string name="eftno">EFT No</string>
+    <string name="printreceiptLS">Print Receipt by LS</string>
+    <string name="downloadV">Download Voucher</string>
+    <string name="jobNo">Job No</string>
+    <string name="resitNo">Receipt No</string>
+    <string name="resitdate">Receipt Date</string>
+    <string name="clientname">Client Name</string>
+    <string name="resitamount">Receipt Amount</string>
 </resources>

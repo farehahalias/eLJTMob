@@ -7,20 +7,25 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuActivityAct" />
-        <activity android:name=".ActEftPaymentInquiry" />
-        <activity android:name=".PrintReceiptLS" />
-        <activity android:name=".ListEftPaymentEnquiry" />
-        <activity android:name=".ListEFT_Adapter" />
-        <activity android:name=".ListJobReceiptLS"></activity>
+        <activity android:name=".MenuActivityAct"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActEftPaymentInquiry"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ListEftPaymentEnquiry"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ListJobReceiptLS"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PrintReceiptLSAct"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

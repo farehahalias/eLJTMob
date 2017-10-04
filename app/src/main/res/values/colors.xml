@@ -16,4 +16,6 @@
     <color name="base">#e8dede</color>
     <color name="iron">#CCCCCC</color>
     <color name="white">#000000</color>
+    <color name="background">#516aae</color>
+    <color name="text_color">#ffffff</color>
 </resources>

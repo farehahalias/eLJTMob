@@ -1,20 +1,18 @@
 package com.example.moshin.eljt2;
 
-import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import java.util.Locale;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class EftPaymentInquiry extends Fragment {
 
     private FragmentController fragmentController;
-    private MyButton btnLanguange;
+    private Button btnLanguange;
 
     @Nullable
     @Override
@@ -28,41 +26,16 @@ public class EftPaymentInquiry extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        fragmentController = new FragmentController(getActivity().getSupportFragmentManager());
-        MyButton btnSearcheft = (MyButton) getView().findViewById(R.id.BtnSearchEft);
+        Button btnSearcheft = (Button) getView().findViewById(R.id.BtnSearchEft);
+        final LinearLayout ListeftHide = (LinearLayout) getActivity().findViewById(R.id.listefthide);
 
         btnSearcheft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ListEftPaymentEnquiry.class);
-                startActivity(intent);
+                ListeftHide.setVisibility(View.VISIBLE);
             }
         });
 
-        btnLanguange = (MyButton)getView().findViewById(R.id.BtnLanguange);
-        btnLanguange.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Locale locale = getResources().getConfiguration().locale;
-                if (locale.toString().equals("ms")) {
-                    locale = new Locale("en");
-                } else if(locale.toString().equals("en")) {
-                    locale = new Locale("ms");
-                } else {
-                    locale = new Locale("ms");
-                }
-                Locale.setDefault(locale);
-                Configuration configuration = new Configuration();
-                configuration.locale = locale;
-                getActivity().getResources().updateConfiguration(configuration, getActivity().getResources().getDisplayMetrics());
-
-                fragmentController.popBackStack("EFT");
-                fragmentController.stackFragment(new EftPaymentInquiry(), R.id.eftPEContent, "EFT");
-            }
-        });
     }
-
-
-
 
 }

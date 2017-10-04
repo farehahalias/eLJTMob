@@ -13,117 +13,64 @@
     android:orientation="vertical">
 
 
-    <ImageView
-        android:layout_width="142dp"
-        android:layout_height="57dp"
-        app:srcCompat="@drawable/eljtlogo"
-        android:id="@+id/imageView"
-        />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right">
-
-    <com.example.moshin.eljt2.MyButton
-        android:text="Change"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:id="@+id/changeMenu" />
-    </LinearLayout>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="126dp"
-        app:srcCompat="@drawable/passport"
-        android:id="@+id/imageUser"
-        android:layout_marginTop="20dp"/>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:text="MUHAMMAD HAKEEM HAMZI HARUN HASHIM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:id="@+id/textViewName"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            />
-
-        <TextView
-            android:text="830803088003"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:id="@+id/textViewIc"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"/>
-
-        <TextView
-            android:text="0345"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:id="@+id/textViewId"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="10dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:transformPivotX="@dimen/activity_horizontal_margin"
-        android:foregroundTint="@color/colorPrimaryDark"
-        android:foregroundGravity="center"
-        android:background= "@drawable/border_shadow">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp">
-
-        <com.example.moshin.eljt2.MenuButton
-            android:text="EFT Payment Enquiry"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:shadowColor="#5b8140"
-            android:background="#8fbc58"
-            android:textColor="#fff"
-            android:id="@+id/buttonEFT"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:orientation="vertical" >
 
-            <com.example.moshin.eljt2.MenuButton
-                android:text="PRINT RECEIPT BY LS"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:shadowColor="#5b8140"
-                android:background="#8fbc58"
-                android:textColor="#fff"
-                android:id="@+id/buttonLS"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:textSize="20dp"
-                android:textStyle="bold"/>
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:transformPivotX="@dimen/activity_horizontal_margin"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:foregroundGravity="center"
+                android:background= "@drawable/border_shadow">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:text="@string/eftPaymentEnquiry"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shadowColor="#5b8140"
+                        android:background="#5b8140"
+                        android:textColor="#fff"
+                        android:id="@+id/buttonEFT"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:text="@string/printreceiptLS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shadowColor="#5b8140"
+                        android:background="#5b8140"
+                        android:textColor="#fff"
+                        android:id="@+id/buttonLS"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

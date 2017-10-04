@@ -7,6 +7,99 @@
     android:orientation="vertical"
     android:weightSum="1">
 
-    <include layout="@layout/activity_menu_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/eljtlogo"
+                    android:id="@+id/imageView"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/languange"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right">
+
+                    <lib.kingja.switchbutton.SwitchMultiButton
+                        android:id="@+id/BtnlangMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        app:strokeRadius="5dp"
+                        app:strokeWidth="1dp"
+                        app:selectedTab="0"
+                        app:selectedColor="#5498da"
+                        app:switchTabs="@array/languange"
+                        app:textSize="12sp" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:maxWidth="100dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/passportt"
+                    android:id="@+id/imageUser"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:text="MUHAMMAD HAKEEM HAMZI HARUN HASHIM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/textViewName"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:text="830803088003"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/textViewIc"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="0345"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/textViewId"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/MenuMain"
+                android:layout_below="@id/textViewId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
 
 </LinearLayout>

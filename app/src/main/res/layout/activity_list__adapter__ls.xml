@@ -1,63 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/relativeLayout1"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_eft"
+    android:background= "@drawable/border_shadow"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
 
-    <TextView
-        android:id="@+id/jNoLS"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.5"
-        android:background="@drawable/listview_shape"
-        android:ellipsize="end"
-        android:padding="5dp"
-        android:text="Job No." >
-    </TextView>
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
 
-    <TextView
-        android:id="@+id/rNoLS"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1.5"
-        android:background="@drawable/listview_shape"
-        android:ellipsize="end"
-        android:padding="5dp"
-        android:text="Receipt No." >
-    </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/jobNo"
+            android:layout_weight="0.705"
+            android:layout_marginLeft="10dp"
+            />
 
-    <TextView
-        android:id="@+id/rDateLS"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1.5"
-        android:background="@drawable/listview_shape"
-        android:ellipsize="end"
-        android:padding="5dp"
-        android:text="Receipt Date" >
-    </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_weight="0.1"
+            android:id="@+id/textViewa" />
 
-    <TextView
-        android:id="@+id/clientName"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1.5"
-        android:background="@drawable/listview_shape"
-        android:ellipsize="end"
-        android:padding="5dp"
-        android:text="Client Name" >
-    </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/JobNo"
+            android:text="Job No" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/rAmount"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.5"
-        android:background="@drawable/listview_shape"
-        android:ellipsize="end"
-        android:padding="5dp"
-        android:text="Receipt Amount (RM)" >
-    </TextView>
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/resitNo"
+            android:layout_weight="0.76"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_weight="0.11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ReceiptNo"
+            android:text="Receipt No"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/resitdate"
+            android:layout_weight="0.79"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_weight="0.11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ReceiptDate"
+            android:text="Receipt Date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/clientname"
+            android:layout_weight="0.7"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height= "wrap_content"
+            android:id="@+id/LLSNo"
+            android:text="LLS No" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/resitamount"
+            android:layout_weight="0.84"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ReceiptAmount"
+            android:text="Receipt Amount" />
+    </LinearLayout>
 
 
 </LinearLayout>

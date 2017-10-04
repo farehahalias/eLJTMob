@@ -12,7 +12,7 @@ public class ListEftPaymentEnquiry extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_eft_payment_enquiry);
+        setContentView(R.layout.activity_print_receipt_ls_act);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

@@ -11,176 +11,197 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Voucher No "
+            android:text="Voucher No"
+            android:layout_weight="0.6467"
             android:layout_marginLeft="10dp"
-            />
+            android:id="@+id/textView2" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text=":"
-            android:layout_marginLeft="10dp"
-            android:paddingLeft="10dp"/>
+            android:layout_weight="0.1"
+            android:id="@+id/textView3" />
 
-        <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text=":"-->
-            <!--android:layout_marginLeft="20dp"/>-->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/VoucherNo"
-            android:text="Voucher No"
-            android:paddingLeft="5dp"/>
+            android:text="Voucher No" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Voucher Date"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.67"
+            android:id="@+id/textView5" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text=":"
-            android:paddingLeft="13dp"/>
+            android:layout_weight="0.11"
+            android:id="@+id/textViews" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/VoucherDate"
-            android:text="Voucher Date"
-            android:paddingLeft="5dp"/>
+            android:text="Voucher Date" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Issue To"
+            android:layout_weight="0.60"
             android:layout_marginLeft="10dp"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text=":"
-            android:layout_marginLeft="10dp"
-            android:paddingLeft="33.5dp"/>
+            android:layout_weight="0.1"
+            android:id="@+id/textViewt" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/IssueTo"
-            android:text="Issue To"
-            android:paddingLeft="5dp"/>
+            android:text="Issue To" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="LLS No"
+            android:layout_weight="0.583"
             android:layout_marginLeft="10dp"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text=":"
-            android:layout_marginLeft="10dp"
-            android:paddingLeft="41.5dp"
-            />
+            android:layout_weight="0.095"
+            android:id="@+id/textViewx" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height= "wrap_content"
             android:id="@+id/LLSNo"
-            android:text="LLS No"
-            android:paddingLeft="5dp"/>
+            android:text="LLS No"/>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:text="LLS Name"
+            android:layout_weight="0.615"
             android:layout_marginLeft="10dp"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text=":"
-            android:layout_marginLeft="38dp"/>
+            android:layout_weight="0.1"
+            android:id="@+id/textViewxn" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/llsName"
-            android:text=""/>
+            android:text="LLS name"/>
+
+
+
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
+            android:layout_weight="0.674"
             android:text="Practice Name"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text=":"
-            android:layout_marginLeft="10dp"
-            android:paddingLeft="0dp"
-            />
+            android:layout_weight="0.112"
+            android:id="@+id/textViewxz" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/PracticeName"
-            android:layout_marginRight="10dp"
-            android:text="PracticeName"
-            android:paddingLeft="5dp"/>
+            android:text="PracticeName" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="2">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Amount (RM)    : "
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Amount (RM)"
             android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_weight="0.13"
+            android:id="@+id/textViewxa" />
 
         <TextView
             android:layout_width="wrap_content"

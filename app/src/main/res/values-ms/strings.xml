@@ -2,6 +2,13 @@
 <resources>
     <string name="app_name">eLJT</string>
     <string name="eftPaymentEnquiry">EFT Bayaran Siasatan</string>
-    <string name="search">Cari</string>
+    <string name="search">Mula Cari</string>
     <string name="eftno">No EFT</string>
+    <string name="printreceiptLS">Cetak Resit mengikut LS</string>
+    <string name="downloadV">Muat Turun Baucar</string>
+    <string name="jobNo">No Pekerjaan</string>
+    <string name="resitNo">No Resit</string>
+    <string name="resitdate">Tarikh Resit</string>
+    <string name="clientname">Nama Pelanggan</string>
+    <string name="resitamount">Harga Resit</string>
 </resources>
