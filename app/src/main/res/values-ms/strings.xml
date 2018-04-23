@@ -11,4 +11,16 @@
     <string name="resitdate">Tarikh Resit</string>
     <string name="clientname">Nama Pelanggan</string>
     <string name="resitamount">Harga Resit</string>
+    <string name="searchEftCheck">Carian EFT/Cek</string>
+    <string name="eftType">Jenis EFT/Cek</string>
+    <string name="eftNoFrom">EFT/Cek No Daripada</string>
+    <string name="eftNoTo">EFT/Cek No Sehingga</string>
+    <string name="eftDateFrom">Tarikh EFT/Cek Daripada</string>
+    <string name="eftDateTo">Tarikh EFT/Cek Sehingga</string>
+    <string name="voucherNoFrom">Voucher No Daripada</string>
+    <string name="voucherNoTo">Voucher No Sehingga</string>
+    <string name="payTo">Bayar Kepada</string>
+    <string name="eftAmount">Jumlah EFT/Cek</string>
+    <string name="eftStatus">Status EFT/Cek</string>
+    <string name="batchId">Id Kumpulan</string>
 </resources>

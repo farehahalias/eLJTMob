@@ -27,6 +27,7 @@ public class Localization {
     public void setLocale(String s) {
         if (s.equals("BM") || s.equals("MS")) {
             locale = new Locale("ms");
+
         } else if(s.equals("EN")) {
             locale = new Locale("en");
         }

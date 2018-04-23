@@ -3,6 +3,8 @@ package com.example.moshin.eljt2;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import lib.kingja.switchbutton.SwitchMultiButton;
 
@@ -17,6 +19,7 @@ public class MenuActivityAct extends AppCompatActivity implements SwitchMultiBut
     private FragmentController fragmentController;
     private Localization localization;
     private SwitchMultiButton BtnLangMenu;
+    public static TextView viewName,viewId,viewIc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,14 +31,24 @@ public class MenuActivityAct extends AppCompatActivity implements SwitchMultiBut
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
         fragmentController = new FragmentController(getSupportFragmentManager());
         fragmentController.stackFragment(new MenuActivity(), R.id.MenuMain, "Menu");
 
         BtnLangMenu = (SwitchMultiButton)findViewById(R.id.BtnlangMenu);
         BtnLangMenu.setOnSwitchListener(this);
+
+        viewName = (TextView) findViewById(R.id.textViewName);
+        viewId = (TextView) findViewById(R.id.textViewId);
+        viewIc = (TextView) findViewById(R.id.textViewIc);
+
+        FetchDataHome process = new FetchDataHome("mainPage");
+        process.execute();
+
     }
 
 
+//logout
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -62,4 +75,11 @@ public class MenuActivityAct extends AppCompatActivity implements SwitchMultiBut
         fragmentController.popBackStack("Menu");
         fragmentController.stackFragment(new MenuActivity(), R.id.MenuMain, "Menu");
     }
+
+//    @Override
+//    public void onResume() {
+//
+//    }
+
+
 }

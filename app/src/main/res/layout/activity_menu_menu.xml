@@ -61,8 +61,16 @@
                     android:id="@+id/imageUser"
                     android:layout_marginTop="10dp"/>
 
-                <TextView
+               <!-- <TextView
                     android:text="MUHAMMAD HAKEEM HAMZI HARUN HASHIM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/textViewName"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    />-->
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
@@ -71,8 +79,16 @@
                     android:layout_marginTop="10dp"
                     />
 
-                <TextView
+               <!-- <TextView
                     android:text="830803088003"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/textViewIc"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>-->
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"

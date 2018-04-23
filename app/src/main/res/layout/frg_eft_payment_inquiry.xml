@@ -119,5 +119,20 @@
 
     </ScrollView>
 
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+        <TableLayout
+            android:id="@+id/tableEftPayment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+        </TableLayout>
+
+    </HorizontalScrollView>
+
 
 </LinearLayout>

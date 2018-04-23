@@ -9,14 +9,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.valdesekamdem.library.mdtoast.MDToast;
+//import com.valdesekamdem.library.mdtoast.MDToast;
 
 //import com.medialablk.easytoast.EasyToast;
 
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
-    EditText txtUsername, txtPassword;
+    public static EditText txtUsername, txtPassword;
+    public static String username,password,userId = "";
 
     // User Session Manager Class
 //    UserSessionManager session;
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         txtPassword = (EditText) findViewById(R.id.editTextPassword);
         Button btnLogin = (Button) findViewById(R.id.BtnLogin);
 
+        // untuk testing
+        txtUsername.setText("218");
+        txtPassword.setText("111");
+
 
         // Login button
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -44,45 +49,48 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View arg0) {
 
                 // Get username, password from EditText
-                String username = txtUsername.getText().toString();
-                String password = txtPassword.getText().toString();
+                username = txtUsername.getText().toString();
+                password = txtPassword.getText().toString();
 
                 //validate password and user id == betul
                 if(username.trim().length() > 0 && password.trim().length() > 0){
 
-                    // untuk testing
-                    // user ID = admin
-                    // password = admin
+//                    AppCompatActivity a = ;
+//                    FetchDataHome process = new FetchDataHome("login");
+//                    process.execute();
 
-                    if(username.equals("admin") && password.equals("admin")){
 
-                        // Creating user login session
-                        // Statically storing name="Android Example"
-                        // and email="androidexample84@gmail.com"
+                        if(password.equals("111")){
+//                        if(result.equalsIgnoreCase("success")){
+
+                            // Creating user login session
+                            // Statically storing name="Android Example"
+                            // and email="androidexample84@gmail.com"
 //                        session.createUserLoginSession("Android Example", "androidexample84@gmail.com");
 
-                        // Starting MainActivity
-                        Intent i = new Intent(getApplicationContext(), MenuActivityAct.class);
-                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            // Starting MainActivity
+                            Intent i = new Intent(getApplicationContext(), MenuActivityAct.class);
+                            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
-                        // Add new Flag to start new Activity
-                        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(i);
+                            // Add new Flag to start new Activity
+                            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(i);
 
-                        finish();
+                            finish();
 
-                    }else{
+                        }else{
 
-                        // user id ngn password tak match //keluarkan toast
-                        MDToast mdToast = MDToast.makeText(getApplicationContext() , "Username/Password is incorrect" , Toast.LENGTH_SHORT);
+                            // user id ngn password tak match //keluarkan toast
+                            Toast mdToast = Toast.makeText(getApplicationContext() , "Username/Password is incorrect" , Toast.LENGTH_SHORT);
                             mdToast.show();
 
-                    }
+                        }
+
                 }else{
                     //kalo user tak masuk apa2 id 0r pass
                     if(username.isEmpty() && password.isEmpty()) {
 
-                        MDToast mdToast = MDToast.makeText(getApplicationContext() , "Please enter your Username and Password" , Toast.LENGTH_SHORT);
+                        Toast mdToast = Toast.makeText(getApplicationContext() , "Please enter your Username and Password" , Toast.LENGTH_SHORT);
                         mdToast.show();
 //
 
@@ -104,5 +112,37 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
     }
+
+
+    public void Testing(String result){
+//        if(username.equals("218") && password.equals("111")){
+            if(result.equalsIgnoreCase("success")){
+
+            // Creating user login session
+            // Statically storing name="Android Example"
+            // and email="androidexample84@gmail.com"
+//                        session.createUserLoginSession("Android Example", "androidexample84@gmail.com");
+
+            // Starting MainActivity
+            Intent i = new Intent(getBaseContext(), MenuActivityAct.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+            // Add new Flag to start new Activity
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(i);
+
+            finish();
+
+        }else{
+
+            // user id ngn password tak match //keluarkan toast
+                Toast mdToast = Toast.makeText(getApplicationContext() , "Username/Password is incorrect" , Toast.LENGTH_SHORT);
+            mdToast.show();
+
+        }
+    }
+
+
 }

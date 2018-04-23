@@ -68,6 +68,21 @@
                         android:textSize="20dp"
                         android:textStyle="bold"/>
 
+                    <Button
+                        android:text="@string/searchEftCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shadowColor="#5b8140"
+                        android:background="#5b8140"
+                        android:textColor="#fff"
+                        android:id="@+id/buttonSearchEFT"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

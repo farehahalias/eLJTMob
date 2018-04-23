@@ -11,4 +11,16 @@
     <string name="resitdate">resitdate</string>
     <string name="clientname">clientname</string>
     <string name="resitamount">resitamount</string>
+    <string name="searchEftCheck">searchEftCheck</string>
+    <string name="eftType">eftType</string>
+    <string name="eftNoFrom">eftNoFrom</string>
+    <string name="eftNoTo">eftNoTo</string>
+    <string name="eftDateFrom">eftDateFrom</string>
+    <string name="eftDateTo">eftDateTo</string>
+    <string name="voucherNoFrom">voucherNoFrom</string>
+    <string name="voucherNoTo">voucherNoTo</string>
+    <string name="payTo">payTo</string>
+    <string name="eftAmount">eftAmount</string>
+    <string name="eftStatus">eftStatus</string>
+    <string name="batchId">batchId</string>
 </resources>

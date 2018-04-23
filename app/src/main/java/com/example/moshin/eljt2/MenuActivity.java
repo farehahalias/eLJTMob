@@ -13,9 +13,12 @@ public class MenuActivity extends Fragment {
 
     private Button buttonEFT;
     private Button buttonLS;
+    private Button buttonSearchEFT;
+    private Localization localization;
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_menu_frg,container,false);
+
 
         buttonEFT = (Button) view.findViewById(R.id.buttonEFT);
 
@@ -37,7 +40,17 @@ public class MenuActivity extends Fragment {
             }
         });
 
+        buttonSearchEFT = (Button) view.findViewById(R.id.buttonSearchEFT);
+
+        buttonSearchEFT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), SearchEFTAct.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
-
+    
 }

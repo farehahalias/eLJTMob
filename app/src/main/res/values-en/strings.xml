@@ -11,4 +11,16 @@
     <string name="resitdate">Receipt Date</string>
     <string name="clientname">Client Name</string>
     <string name="resitamount">Receipt Amount</string>
+    <string name="searchEftCheck">Search EFT/Cheque</string>
+    <string name="eftType">EFT/Cheque Type</string>
+    <string name="eftNoFrom">EFT/Cheque No. From</string>
+    <string name="eftNoTo">EFT/Cheque No. To</string>
+    <string name="eftDateFrom">EFT/Cheque Date From</string>
+    <string name="eftDateTo">EFT/Cheque Date To</string>
+    <string name="voucherNoFrom">Voucher No. From</string>
+    <string name="voucherNoTo">Voucher No. To</string>
+    <string name="payTo">Pay To</string>
+    <string name="eftAmount">EFT/Cheque Amount (RM)</string>
+    <string name="eftStatus">EFT/Cheque Status</string>
+    <string name="batchId">Batch Id</string>
 </resources>
